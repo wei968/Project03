@@ -1,0 +1,126 @@
+/* 全局样式 */
+body {
+    font-family: "Arial", sans-serif;
+    /* 更改背景颜色渐变 */
+    background: linear-gradient(to bottom, #333333, #666666);
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* 页眉样式 */
+header {
+    /* 更改页眉背景颜色 */
+    background-color: #006699;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 1.5em;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+/* 游戏容器 */
+#game-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    /* 更改游戏容器背景颜色和透明度 */
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* 玩家信息样式 */
+#player-info p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* 任务容器 */
+.task {
+    /* 更改任务容器背景颜色 */
+    background-color: #222222;
+    border: 2px solid #00cc00;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.2s ease - in - out, box - shadow 0.2s ease - in - out;
+}
+
+/* 鼠标悬停时任务样式 */
+.task:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* 任务标题 */
+.task h3 {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+    color: #00ffff;
+}
+
+/* 任务描述 */
+.task p {
+    margin: 0 0 10px;
+}
+
+/* 按钮样式 */
+.task button {
+    background-color: #0099ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background - color 0.2s ease - in - out;
+}
+
+/* 鼠标悬停时按钮样式 */
+.task button:hover {
+    background-color: #9933ff;
+}
+
+/* 禁用按钮样式 */
+.task button:disabled {
+    background-color: #444444;
+    cursor: not - allowed;
+}
+
+/* 进度样式 */
+#progress {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+    background-color: #000099;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* 页脚 */
+footer {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* 背景音乐按钮 */
+#toggle-music {
+    background-color: #ff0000; /* 修改为更醒目的颜色，这里改为红色 */
+    color: white;
+    font-size: 1.1em;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 50px; /* 设置为圆形，值为按钮宽度或高度的一半 */
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    transition: background - color 0.2s ease - in - out;
+}
+
+/* 鼠标悬停时音乐按钮样式 */
+#toggle-music:hover {
+    background-color: #ff6666;
+}
